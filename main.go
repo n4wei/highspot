@@ -27,7 +27,7 @@ func main() {
 	flag.Parse()
 
 	if mixtapeFile == "" || changesFile == "" {
-		handleFlagError(errors.New("missing required flags"))
+		handleFlagError(errors.New("missing required flags -m and -c"))
 	}
 
 	// Read mixtape file
