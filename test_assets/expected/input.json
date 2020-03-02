@@ -1,0 +1,95 @@
+{
+  "users" : [
+    {
+      "id" : "1",
+      "name" : "Albin Jaye"
+    },
+    {
+      "id" : "2",
+      "name" : "Dipika Crescentia"
+    },
+    {
+      "id" : "3",
+      "name" : "Ankit Sacnite"
+    }
+  ],
+  "playlists" : [
+    {
+      "id" : "1",
+      "user_id" : "1",
+      "song_ids" : [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id" : "2",
+      "user_id" : "2",
+      "song_ids" : [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "id" : "3",
+      "user_id" : "3",
+      "song_ids" : [
+        "9",
+        "10"
+      ]
+    }
+  ],
+  "songs": [
+    {
+      "id" : "1",
+      "artist": "Camila Cabello",
+      "title": "Never Be the Same"
+    },
+    {
+      "id" : "2",
+      "artist": "Zedd",
+      "title": "The Middle"
+    },
+    {
+      "id" : "3",
+      "artist": "The Weeknd",
+      "title": "Pray For Me"
+    },
+    {
+      "id" : "4",
+      "artist": "Drake",
+      "title": "God's Plan"
+    },
+    {
+      "id" : "5",
+      "artist": "Bebe Rexha",
+      "title": "Meant to Be"
+    },
+    {
+      "id" : "6",
+      "artist": "Imagine Dragons",
+      "title": "Whatever It Takes"
+    },
+    {
+      "id" : "7",
+      "artist": "Maroon 5",
+      "title": "Wait"
+    },
+    {
+      "id" : "8",
+      "artist": "Bazzi",
+      "title": "Mine"
+    },
+    {
+      "id" : "9",
+      "artist": "Marshmello",
+      "title": "FRIENDS"
+    },
+    {
+      "id" : "10",
+      "artist": "Dua Lipa",
+      "title": "New Rules"
+    }
+  ]
+}
