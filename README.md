@@ -30,13 +30,17 @@ There are comments throughout the code with additional design details.
 mkdir -p $HOME/workspace/go
 export GOPATH=$HOME/workspace/go
 ```
-3. Clone this github repo. From the base directory, run the following to build the command line binary:
+3. Clone this github repo in your `$GOPATH`. The following command also installs the `highspot` binary in `$GOPATH/bin`
 ```
-go build -o highspot main.go
+go get github.com/n4wei/highspot
 ```
-4. Run the command. eg.
+4. Add `$GOPATH/bin` to your `$PATH`.
 ```
-./highspot -m mixtape.json -c changes.json
+export PATH="$PATH:$GOPATH/bin"
+```
+5. Run the command. eg.
+```
+highspot -m mixtape.json -c changes.json
 ```
 
 The original mixtape.json is in the `./json` directory. There is a sample changes.json file in there too.
@@ -48,7 +52,7 @@ The original mixtape.json is in the `./json` directory. There is a sample change
 go get github.com/onsi/ginkgo/ginkgo
 go get github.com/onsi/gomega/...
 ```
-3. Add `$GOPATH/bin` to your `PATH`. Step 3 installed a `ginkgo` binary in `$GOPATH/bin` which is needed to run tests.
+3. Add `$GOPATH/bin` to your `$PATH`. Step 3 installed a `ginkgo` binary in `$GOPATH/bin` which is needed to run tests.
 4. Clone this github repo and run `ginkgo -r .` from the base directory to run all tests.
 
 ### Ideas for Running at Larger Scale
